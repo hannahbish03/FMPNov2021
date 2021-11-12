@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class AnimationController : MonoBehaviour
 {
-   
+
     public bool isRunningMe;
     public Animator anim;
     public GameObject player;
@@ -14,21 +14,17 @@ public class AnimationController : MonoBehaviour
 
     public float jumpSpeed = 5;
    
-    
 
-    void Start()
-    {
-        Run();
-    }
 
-    void Update()
+  
+    public void Update()
     {
-        if( Input.GetKeyDown("up"))
+        if (Input.GetKeyDown("up"))
         {
             Run();
         }
 
-        if(Input.GetKeyDown("down"))
+        if (Input.GetKeyDown("down"))
         {
             Walk();
         }
@@ -41,30 +37,40 @@ public class AnimationController : MonoBehaviour
         {
             Walk();
         }
-      
-            if (Input.GetKeyDown("space")) 
-            {
-                Jump();
-            }
-        
-        
+
+
+
+
+      // if (Input.GetKeyDown("space"))
+       // {
+        //    jump();
+        // }
+
+         
+
+
+        void Run()
+        {
+            anim.SetBool("isRunning", false);
+            player.GetComponent<PlayerMovement>().currantSpeed = runSpeed;
+        }
+        void Walk()
+        {
+            anim.SetBool("isRunning", true);
+            player.GetComponent<PlayerMovement>().currantSpeed = walkSpeed;
+        }
+       
+        void jumpAni()
+        {
+           Debug.Log("jump");
+            anim.SetTrigger("Jump");
+
+           // player.GetComponent<Rigidbody>().velocity += jumpSpeed * Vector3.up;
         }
 
-    void Run()
-    {
-        anim.SetBool("isRunning", false);
-        player.GetComponent<PlayerMovement>().currantSpeed = runSpeed;
-    }
-    void Walk()
-    {
-        anim.SetBool("isRunning", true);
-        player.GetComponent<PlayerMovement>().currantSpeed = walkSpeed;
-    }
-    void Jump()
-    {
-        Debug.Log("jump"); 
-        anim.SetTrigger("Jump");
-        
-        player.GetComponent<Rigidbody>().velocity += jumpSpeed * Vector3.up;
+         void Start()
+        {
+            Run();
+        }
     }
 }
