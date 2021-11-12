@@ -1,0 +1,22 @@
+fileFormatVersion: 2
+guid: 851ff257fd0f18d429baa322d263ae2a
+TrueTypeFontImporter:
+  externalObjects: {}
+  serializedVersion: 4
+  fontSize: 16
+  forceTextureCase: -2
+  characterSpacing: 0
+  characterPadding: 1
+  includeFontData: 1
+  fontNames:
+  - trashco
+  fallbackFontReferences:
+  - {fileID: 12800000, guid: 409895076b1b41047943996335c5b851, type: 3}
+  customCharacters: 
+  fontRenderingMode: 0
+  ascentCalculationMode: 1
+  useLegacyBoundsCalculation: 0
+  shouldRoundAdvanceValue: 1
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

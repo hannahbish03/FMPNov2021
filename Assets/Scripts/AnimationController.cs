@@ -4,6 +4,7 @@ using UnityEngine;
 
 public class AnimationController : MonoBehaviour
 {
+   
     public bool isRunningMe;
     public Animator anim;
     public GameObject player;
@@ -12,6 +13,8 @@ public class AnimationController : MonoBehaviour
     public float runSpeed = 7;
 
     public float jumpSpeed = 5;
+   
+    
 
     void Start()
     {
@@ -38,11 +41,14 @@ public class AnimationController : MonoBehaviour
         {
             Walk();
         }
-        if (Input.GetKeyDown("space"))
-        {
-            Jump();
+      
+            if (Input.GetKeyDown("space")) 
+            {
+                Jump();
+            }
+        
+        
         }
-    }
 
     void Run()
     {
@@ -58,7 +64,7 @@ public class AnimationController : MonoBehaviour
     {
         Debug.Log("jump"); 
         anim.SetTrigger("Jump");
-
+        
         player.GetComponent<Rigidbody>().velocity += jumpSpeed * Vector3.up;
     }
 }

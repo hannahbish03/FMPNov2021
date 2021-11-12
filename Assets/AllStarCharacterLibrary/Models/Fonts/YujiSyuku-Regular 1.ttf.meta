@@ -1,0 +1,22 @@
+fileFormatVersion: 2
+guid: 19015008f01138b4fa891f3e27e853aa
+TrueTypeFontImporter:
+  externalObjects: {}
+  serializedVersion: 4
+  fontSize: 16
+  forceTextureCase: -2
+  characterSpacing: 0
+  characterPadding: 1
+  includeFontData: 1
+  fontNames:
+  - Yuji Syuku
+  fallbackFontReferences:
+  - {fileID: 12800000, guid: f5bb6939c6223644cbe5f0011b329511, type: 3}
+  customCharacters: 
+  fontRenderingMode: 0
+  ascentCalculationMode: 1
+  useLegacyBoundsCalculation: 0
+  shouldRoundAdvanceValue: 1
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
