@@ -12,9 +12,9 @@ public class PlayerMovement : MonoBehaviour
     [SerializeField] Rigidbody rb;
 
     float horizontalInput;
-    public float horizontalMultiplier;
+    public float horizontalMultiplier =2;
     
-    [SerializeField] float JumpForce = 400f;
+    [SerializeField] float JumpForce = 200f;
     [SerializeField] LayerMask groundMask;
     private void FixedUpdate()
     {
@@ -61,15 +61,25 @@ public class PlayerMovement : MonoBehaviour
         float height = GetComponent<Collider>().bounds.size.y;
         bool isGrounded = Physics.Raycast(transform.position, Vector3.down, (height / 2) + 0.1f, groundMask );
 
-        if (Input.GetKeyDown("space"))
-        {
-            jump();
-        } 
+        //if (Input.GetKeyDown("space"))
+        //{
+        //    jump();
+        //} 
         rb.AddForce(Vector3.up * JumpForce);
     }
 
 
+    public bool isGrounded()
+    {
+        //Collider2D groundCheck = Physics2D.OverlapCircle(transform.position, 1.4f, groundMask);
 
+        //if (groundCheck != null)
+        //{
+        //    return true;
+        //}
+
+        return false;
+    }
 
 
 

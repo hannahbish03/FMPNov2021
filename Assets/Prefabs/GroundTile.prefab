@@ -9,7 +9,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 5190880702230407463}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: ObsticalSpawnRight
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -39,7 +39,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 8995175100844080828}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: 'ObsticalSpawnMiddle '
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -69,7 +69,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 9026718782093596779}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: ObsticalSpawnLeft
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -99,7 +99,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 7996386598144736342}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: NextSpawnPoint
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -132,7 +132,7 @@ GameObject:
   - component: {fileID: 7996386599165541093}
   - component: {fileID: 7996386599165541094}
   - component: {fileID: 7996386599165541095}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Plane
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -227,7 +227,7 @@ GameObject:
   - component: {fileID: 7996386599413988004}
   - component: {fileID: 3670273575143323818}
   - component: {fileID: 2028476397874430445}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: GroundTile
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -301,6 +301,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Rubble_01_Large (1)
       objectReference: {fileID: 0}
+    - target: {fileID: 1195488190180710, guid: 8b89c66bcbc4662448c7c75248947c5c, type: 3}
+      propertyPath: m_Layer
+      value: 8
+      objectReference: {fileID: 0}
     - target: {fileID: 4971715806377316, guid: 8b89c66bcbc4662448c7c75248947c5c, type: 3}
       propertyPath: m_RootOrder
       value: 0
@@ -357,6 +361,14 @@ PrefabInstance:
     - target: {fileID: 1552601256050668, guid: 8d55ec0e96e52ba459950896cbe6f1e4, type: 3}
       propertyPath: m_Name
       value: Durga_Free_Standing
+      objectReference: {fileID: 0}
+    - target: {fileID: 1552601256050668, guid: 8d55ec0e96e52ba459950896cbe6f1e4, type: 3}
+      propertyPath: m_Layer
+      value: 8
+      objectReference: {fileID: 0}
+    - target: {fileID: 1646438655024674, guid: 8d55ec0e96e52ba459950896cbe6f1e4, type: 3}
+      propertyPath: m_Layer
+      value: 8
       objectReference: {fileID: 0}
     - target: {fileID: 4052535050343512, guid: 8d55ec0e96e52ba459950896cbe6f1e4, type: 3}
       propertyPath: m_LocalScale.x
@@ -456,9 +468,17 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 7996386599413988004}
     m_Modifications:
+    - target: {fileID: 1266664356686274, guid: 42612f8b6c0dce8468648f3f08db6d96, type: 3}
+      propertyPath: m_Layer
+      value: 8
+      objectReference: {fileID: 0}
     - target: {fileID: 1370723301690648, guid: 42612f8b6c0dce8468648f3f08db6d96, type: 3}
       propertyPath: m_Name
       value: Candle3 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1370723301690648, guid: 42612f8b6c0dce8468648f3f08db6d96, type: 3}
+      propertyPath: m_Layer
+      value: 8
       objectReference: {fileID: 0}
     - target: {fileID: 4203199286425600, guid: 42612f8b6c0dce8468648f3f08db6d96, type: 3}
       propertyPath: m_RootOrder
@@ -534,6 +554,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Rubble_01_Large
       objectReference: {fileID: 0}
+    - target: {fileID: 1195488190180710, guid: 8b89c66bcbc4662448c7c75248947c5c, type: 3}
+      propertyPath: m_Layer
+      value: 8
+      objectReference: {fileID: 0}
     - target: {fileID: 4971715806377316, guid: 8b89c66bcbc4662448c7c75248947c5c, type: 3}
       propertyPath: m_RootOrder
       value: 6
@@ -600,6 +624,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Rubble_03_Large
       objectReference: {fileID: 0}
+    - target: {fileID: 1673158247706112, guid: bc3316724907acc499f7aa324f7a5d68, type: 3}
+      propertyPath: m_Layer
+      value: 8
+      objectReference: {fileID: 0}
     - target: {fileID: 4820514527977402, guid: bc3316724907acc499f7aa324f7a5d68, type: 3}
       propertyPath: m_RootOrder
       value: 0
@@ -661,6 +689,14 @@ PrefabInstance:
     - target: {fileID: 1606569669090166, guid: 590d927f63be3ce44bca618d073bb102, type: 3}
       propertyPath: m_Name
       value: Small_Tower (1)
+      objectReference: {fileID: 0}
+    - target: {fileID: 1606569669090166, guid: 590d927f63be3ce44bca618d073bb102, type: 3}
+      propertyPath: m_Layer
+      value: 8
+      objectReference: {fileID: 0}
+    - target: {fileID: 1907659185960228, guid: 590d927f63be3ce44bca618d073bb102, type: 3}
+      propertyPath: m_Layer
+      value: 8
       objectReference: {fileID: 0}
     - target: {fileID: 4123989887538996, guid: 590d927f63be3ce44bca618d073bb102, type: 3}
       propertyPath: m_RootOrder
@@ -743,9 +779,17 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 7996386599413988004}
     m_Modifications:
+    - target: {fileID: 1009388893663016, guid: 30ce1337c7e883448a740b36c657abe8, type: 3}
+      propertyPath: m_Layer
+      value: 8
+      objectReference: {fileID: 0}
     - target: {fileID: 1870622365912642, guid: 30ce1337c7e883448a740b36c657abe8, type: 3}
       propertyPath: m_Name
       value: Pillar_01
+      objectReference: {fileID: 0}
+    - target: {fileID: 1870622365912642, guid: 30ce1337c7e883448a740b36c657abe8, type: 3}
+      propertyPath: m_Layer
+      value: 8
       objectReference: {fileID: 0}
     - target: {fileID: 4402077661806130, guid: 30ce1337c7e883448a740b36c657abe8, type: 3}
       propertyPath: m_LocalScale.x
@@ -841,9 +885,25 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 7996386599413988004}
     m_Modifications:
+    - target: {fileID: 100000, guid: 78d3c3494e3b1ca428d7156a701bdef3, type: 3}
+      propertyPath: m_Layer
+      value: 8
+      objectReference: {fileID: 0}
+    - target: {fileID: 100002, guid: 78d3c3494e3b1ca428d7156a701bdef3, type: 3}
+      propertyPath: m_Layer
+      value: 8
+      objectReference: {fileID: 0}
+    - target: {fileID: 100004, guid: 78d3c3494e3b1ca428d7156a701bdef3, type: 3}
+      propertyPath: m_Layer
+      value: 8
+      objectReference: {fileID: 0}
     - target: {fileID: 100006, guid: 78d3c3494e3b1ca428d7156a701bdef3, type: 3}
       propertyPath: m_Name
       value: dfk_shelves_01
+      objectReference: {fileID: 0}
+    - target: {fileID: 100006, guid: 78d3c3494e3b1ca428d7156a701bdef3, type: 3}
+      propertyPath: m_Layer
+      value: 8
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: 78d3c3494e3b1ca428d7156a701bdef3, type: 3}
       propertyPath: m_LocalPosition.x
@@ -951,9 +1011,25 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 7996386599413988004}
     m_Modifications:
+    - target: {fileID: 100000, guid: 084da560759559f4995810207469e30a, type: 3}
+      propertyPath: m_Layer
+      value: 8
+      objectReference: {fileID: 0}
     - target: {fileID: 100002, guid: 084da560759559f4995810207469e30a, type: 3}
       propertyPath: m_Name
       value: candlestick
+      objectReference: {fileID: 0}
+    - target: {fileID: 100002, guid: 084da560759559f4995810207469e30a, type: 3}
+      propertyPath: m_Layer
+      value: 8
+      objectReference: {fileID: 0}
+    - target: {fileID: 100004, guid: 084da560759559f4995810207469e30a, type: 3}
+      propertyPath: m_Layer
+      value: 8
+      objectReference: {fileID: 0}
+    - target: {fileID: 100006, guid: 084da560759559f4995810207469e30a, type: 3}
+      propertyPath: m_Layer
+      value: 8
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: 084da560759559f4995810207469e30a, type: 3}
       propertyPath: m_LocalScale.y
@@ -1049,6 +1125,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Rubble_02_Large
       objectReference: {fileID: 0}
+    - target: {fileID: 1652511216423882, guid: 01e6eda157781cd4cb6577afa06cd694, type: 3}
+      propertyPath: m_Layer
+      value: 8
+      objectReference: {fileID: 0}
     - target: {fileID: 4437828550375150, guid: 01e6eda157781cd4cb6577afa06cd694, type: 3}
       propertyPath: m_RootOrder
       value: 0
@@ -1110,6 +1190,10 @@ PrefabInstance:
     - target: {fileID: 100000, guid: bef7b986193024a70aab30c47a7b66ec, type: 3}
       propertyPath: m_Name
       value: Desert Plant
+      objectReference: {fileID: 0}
+    - target: {fileID: 100000, guid: bef7b986193024a70aab30c47a7b66ec, type: 3}
+      propertyPath: m_Layer
+      value: 8
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: bef7b986193024a70aab30c47a7b66ec, type: 3}
       propertyPath: m_RootOrder
@@ -1181,9 +1265,17 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 7996386599413988004}
     m_Modifications:
+    - target: {fileID: 100000, guid: cd5bfe793a85f1e40ac7d66c245660d5, type: 3}
+      propertyPath: m_Layer
+      value: 8
+      objectReference: {fileID: 0}
     - target: {fileID: 100002, guid: cd5bfe793a85f1e40ac7d66c245660d5, type: 3}
       propertyPath: m_Name
       value: Roofing_Flat_01
+      objectReference: {fileID: 0}
+    - target: {fileID: 100002, guid: cd5bfe793a85f1e40ac7d66c245660d5, type: 3}
+      propertyPath: m_Layer
+      value: 8
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: cd5bfe793a85f1e40ac7d66c245660d5, type: 3}
       propertyPath: m_LocalScale.x
@@ -1275,6 +1367,14 @@ PrefabInstance:
       propertyPath: m_Name
       value: Small_Tower
       objectReference: {fileID: 0}
+    - target: {fileID: 1606569669090166, guid: 590d927f63be3ce44bca618d073bb102, type: 3}
+      propertyPath: m_Layer
+      value: 8
+      objectReference: {fileID: 0}
+    - target: {fileID: 1907659185960228, guid: 590d927f63be3ce44bca618d073bb102, type: 3}
+      propertyPath: m_Layer
+      value: 8
+      objectReference: {fileID: 0}
     - target: {fileID: 4123989887538996, guid: 590d927f63be3ce44bca618d073bb102, type: 3}
       propertyPath: m_RootOrder
       value: 5
@@ -1361,9 +1461,25 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 7996386599413988004}
     m_Modifications:
+    - target: {fileID: 100000, guid: 66dd512dabeec684ab0f4b135d4a43ce, type: 3}
+      propertyPath: m_Layer
+      value: 8
+      objectReference: {fileID: 0}
+    - target: {fileID: 100002, guid: 66dd512dabeec684ab0f4b135d4a43ce, type: 3}
+      propertyPath: m_Layer
+      value: 8
+      objectReference: {fileID: 0}
     - target: {fileID: 100004, guid: 66dd512dabeec684ab0f4b135d4a43ce, type: 3}
       propertyPath: m_Name
       value: Latern4
+      objectReference: {fileID: 0}
+    - target: {fileID: 100004, guid: 66dd512dabeec684ab0f4b135d4a43ce, type: 3}
+      propertyPath: m_Layer
+      value: 8
+      objectReference: {fileID: 0}
+    - target: {fileID: 100006, guid: 66dd512dabeec684ab0f4b135d4a43ce, type: 3}
+      propertyPath: m_Layer
+      value: 8
       objectReference: {fileID: 0}
     - target: {fileID: 400002, guid: 66dd512dabeec684ab0f4b135d4a43ce, type: 3}
       propertyPath: m_LocalPosition.x
@@ -1447,9 +1563,17 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 5288559231564604885}
     m_Modifications:
+    - target: {fileID: 1009388893663016, guid: 30ce1337c7e883448a740b36c657abe8, type: 3}
+      propertyPath: m_Layer
+      value: 8
+      objectReference: {fileID: 0}
     - target: {fileID: 1870622365912642, guid: 30ce1337c7e883448a740b36c657abe8, type: 3}
       propertyPath: m_Name
       value: Pillar_01 (1)
+      objectReference: {fileID: 0}
+    - target: {fileID: 1870622365912642, guid: 30ce1337c7e883448a740b36c657abe8, type: 3}
+      propertyPath: m_Layer
+      value: 8
       objectReference: {fileID: 0}
     - target: {fileID: 4402077661806130, guid: 30ce1337c7e883448a740b36c657abe8, type: 3}
       propertyPath: m_LocalScale.x

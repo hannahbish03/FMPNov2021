@@ -38,13 +38,10 @@ public class AnimationController : MonoBehaviour
             Walk();
         }
 
-
-
-
-      // if (Input.GetKeyDown("space"))
-       // {
-        //    jump();
-        // }
+        if (Input.GetKeyDown("space"))
+        {
+        jump();
+        }
 
          
 
@@ -60,9 +57,9 @@ public class AnimationController : MonoBehaviour
             player.GetComponent<PlayerMovement>().currantSpeed = walkSpeed;
         }
        
-        void jumpAni()
+        void jump()
         {
-           Debug.Log("jump");
+           //Debug.Log("jump");
             anim.SetTrigger("Jump");
 
            // player.GetComponent<Rigidbody>().velocity += jumpSpeed * Vector3.up;
