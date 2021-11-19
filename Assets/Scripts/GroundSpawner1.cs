@@ -4,18 +4,25 @@ using UnityEngine;
 
 public class GroundSpawner1 : MonoBehaviour
 {
-  [SerializeField] GameObject groundTile;
+    public GameObject[] allTiles;
+    public GameObject nextTile;
+    int indexInTiles;
     Vector3 nextSpawnPoint;
 
     public void SpawnTile(bool spawnItems)
     {
-        GameObject temp = Instantiate(groundTile, nextSpawnPoint, Quaternion.identity);
+        //tile select
+        indexInTiles = Random.Range(0, allTiles.Length);
+        nextTile = allTiles[indexInTiles];
+
+        //spawn
+        GameObject temp = Instantiate(nextTile, nextSpawnPoint, Quaternion.identity);
         nextSpawnPoint = temp.transform.GetChild(1).transform.position;
 
         if (spawnItems)
         {
             temp.GetComponent<GroundTile>().SpawnObsticle();
-            temp.GetComponent < GroundTile>().SpawnCoins();
+            temp.GetComponent<GroundTile>().SpawnCoins();
         }
     }
 
@@ -27,11 +34,11 @@ public class GroundSpawner1 : MonoBehaviour
             {
                 SpawnTile(false);
             }
-           else
+            else
             {
                 SpawnTile(true);
             }
-   
+
         }
     }
 

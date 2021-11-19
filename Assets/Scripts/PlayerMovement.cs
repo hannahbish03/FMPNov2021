@@ -10,10 +10,14 @@ public class PlayerMovement : MonoBehaviour
 
     AnimationController animController;
     [SerializeField] Rigidbody rb;
-
+    
     float horizontalInput;
     public float horizontalMultiplier =2;
-    
+     public void Start()
+    {
+        
+
+    }
     [SerializeField] float JumpForce = 200f;
     [SerializeField] LayerMask groundMask;
     private void FixedUpdate()

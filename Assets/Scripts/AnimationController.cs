@@ -8,34 +8,49 @@ public class AnimationController : MonoBehaviour
     public bool isRunningMe;
     public Animator anim;
     public GameObject player;
-
+    SoundManager sm;
     public float walkSpeed = 3;
     public float runSpeed = 7;
 
     public float jumpSpeed = 5;
-   
 
 
-  
+    public void Start()
+    {
+        sm.GetComponent<SoundManager>();
+    }
+
     public void Update()
     {
         if (Input.GetKeyDown("up"))
         {
+   
             Run();
+            sm.Playrun();
         }
 
         if (Input.GetKeyDown("down"))
         {
+
+            
             Walk();
+            sm.Playrun();
+
         }
         if (Input.GetKeyDown("w"))
         {
+
+          
             Run();
+            sm.Playrun();
         }
 
         if (Input.GetKeyDown("s"))
         {
+
+        
             Walk();
+            sm.Playrun();
         }
 
         if (Input.GetKeyDown("space"))
@@ -48,13 +63,16 @@ public class AnimationController : MonoBehaviour
 
         void Run()
         {
+            
             anim.SetBool("isRunning", false);
             player.GetComponent<PlayerMovement>().currantSpeed = runSpeed;
+            
         }
         void Walk()
         {
             anim.SetBool("isRunning", true);
             player.GetComponent<PlayerMovement>().currantSpeed = walkSpeed;
+
         }
        
         void jump()
@@ -65,7 +83,7 @@ public class AnimationController : MonoBehaviour
            // player.GetComponent<Rigidbody>().velocity += jumpSpeed * Vector3.up;
         }
 
-         void Start()
+        void Start()
         {
             Run();
         }

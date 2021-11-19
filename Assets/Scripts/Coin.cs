@@ -5,32 +5,46 @@ using UnityEngine;
 public class Coin : MonoBehaviour
 {
    [SerializeField] float turnSpeed = 90f;
+    //  public AudioSource tickSource;
+
+  public SoundManager sm;
+  
     
-     private void OnTriggerEnter(Collider other)
+    
+    void Start()
+    {
+        //tickSource = GetComponent<AudioSource>();
+
+        sm = FindObjectOfType<SoundManager>();
+    
+    
+    
+    
+    }
+    private void OnTriggerEnter(Collider other)
      { 
         if (other.gameObject.GetComponent<Obsticle>() != null)
         {
-            Destroy(gameObject);
+
+         
+
+           Destroy(gameObject);
+           
             return;
+
         }
-        
         
         
         if (other.gameObject.name != "Player") {
 
             return;
         }
-
+        
+        sm.Playcoin();
         Destroy(gameObject);
 
         GameManager.inst.IncrementScore();
      }
-
-    
-    void Start()
-    {
-        
-    }
 
     void Update()
     {
