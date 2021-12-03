@@ -18,6 +18,7 @@ public class PlayerMovement : MonoBehaviour
         
 
     }
+   
     [SerializeField] float JumpForce = 200f;
     [SerializeField] LayerMask groundMask;
     private void FixedUpdate()
@@ -31,7 +32,13 @@ public class PlayerMovement : MonoBehaviour
 
 
     }
-
+    //private void OnTriggerEnter(Collider other)
+    //{
+    //    if (other.tag == "Obsticle")
+    //    {
+    //        ScoreManager.instance.AddScore();
+    //    }
+    //}
     private void Update()
     {
         horizontalInput = Input.GetAxis("Horizontal");
@@ -50,10 +57,15 @@ public class PlayerMovement : MonoBehaviour
     public void Die()
     {
         alive = false;
-        Invoke("Restart", 0);
+      //  Invoke("Restart", 0);
 
+        Death();
     }
-
+    void Death()
+    {
+        SceneManager.LoadScene("DeathScene");
+    }
+    
     void Restart()
     {
         SceneManager.LoadScene(SceneManager.GetActiveScene().name);

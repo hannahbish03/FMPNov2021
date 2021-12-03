@@ -4,5 +4,20 @@
 EditorBuildSettings:
   m_ObjectHideFlags: 0
   serializedVersion: 2
-  m_Scenes: []
+  m_Scenes:
+  - enabled: 1
+    path: Assets/(P&W)Temple_Edition/scenes/Menu.unity
+    guid: 94c86cc331e552d4dac4a8a07819c503
+  - enabled: 1
+    path: Assets/(P&W)Temple_Edition/scenes/Game.unity
+    guid: 9fc0d4010bbf28b4594072e72b8655ab
+  - enabled: 1
+    path: Assets/(P&W)Temple_Edition/scenes/Controls.unity
+    guid: e453b2f0a96ea1c4280bc4b3543e66f7
+  - enabled: 1
+    path: Assets/PauseScene.unity
+    guid: 255e218d6a440a949a6183f2d3cde871
+  - enabled: 1
+    path: Assets/DeathScene.unity
+    guid: 0dc492023a4c6d642ab98147f4f0b381
   m_configObjects: {}
