@@ -5,32 +5,25 @@ using UnityEngine.UI;
 public class GameManager : MonoBehaviour
 {
 
-    public int currantScore;
+    public int currentScore;
     public int highScorePrefs = PlayerPrefs.GetInt("HighScore");
     public static GameManager inst;
 
-    [SerializeField] Text currantScoreText;
-    public Text currantHighScore;
+    [SerializeField] Text currentScoreText;
+    public Text currentHighScore;
 
     public void IncrementScore()
     {
         Debug.Log("coin pickup");
-        currantScore++;
-        currantScoreText.text = "SCORE: " + currantScore;
-
-        if (currantScore >= highScorePrefs)
+        currentScore++;
+        
+        highScorePrefs = PlayerPrefs.GetInt("HighScore");
+        if (currentScore >= highScorePrefs)
         {
-            currantHighScore.text = highScorePrefs.ToString(); /*"HIGHSCORE: " + PlayerPrefs.GetInt("HighScore").ToString();*/
+             /*"HIGHSCORE: " + PlayerPrefs.GetInt("HighScore").ToString();*/
             //highScorePrefs = currantHighScore; 
-            
-            //need to set player pref to new high score
-            //need to set player pref to new high score
-            //need to set player pref to new high score
-            //need to set player pref to new high score
-            //need to set player pref to new high score
-            //need to set player pref to new high score
 
-            PlayerPrefs.SetInt("HighScore", currantScore);
+            PlayerPrefs.SetInt("HighScore", currentScore);
             PlayerPrefs.Save();
         }
     }
@@ -39,9 +32,14 @@ public class GameManager : MonoBehaviour
     {
         inst = this;
     }
+    private void Update()
+    {
+        currentHighScore.text = "Highscore: " + highScorePrefs.ToString();
+        currentScoreText.text = "SCORE: " + currentScore;
+    }
 
     void Start()
     {
-        currantHighScore.text = "HIGHSCORE: " + highScorePrefs.ToString();  /*PlayerPrefs.GetInt("HighScore").ToString();*/
+        currentHighScore.text = "HIGHSCORE: " + highScorePrefs.ToString();  /*PlayerPrefs.GetInt("HighScore").ToString();*/
     }
 }
